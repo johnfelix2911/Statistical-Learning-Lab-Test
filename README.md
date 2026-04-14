@@ -321,18 +321,6 @@ df = pd.read_csv('ai4i2020.csv')
 
 ---
 
-## 📚 Learning Outcomes
-
-Upon completing this lab, you will understand:
-- How to perform comprehensive exploratory data analysis
-- Building and training deep learning anomaly detection models
-- Handling imbalanced classification problems
-- Model evaluation and interpretation in production contexts
-- Statistical foundations of machine learning
-- Practical predictive maintenance strategies
-
----
-
 ## 🔗 References & Resources
 
 **Datasets**:
@@ -343,34 +331,3 @@ Upon completing this lab, you will understand:
 - Autoencoders: [PyTorch Tutorials](https://pytorch.org/tutorials/)
 - Imbalanced Learning: [Imbalanced-learn Documentation](https://imbalanced-learn.org/)
 - Time Series: [Statistical Forecasting](https://www.statsmodels.org/)
-
----
-
-## 📝 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👤 Author
-
-**John Felix** (@johnfelix2911)
-
-Created: April 2026  
-Repository: [Statistical-Learning-Lab-Test](https://github.com/johnfelix2911/Statistical-Learning-Lab-Test)
-
----
-
-## ❓ FAQ
-
-**Q: Why is recall so low?**  
-A: The dataset is highly imbalanced (~0.8% failures). The model prioritizes avoiding false alarms. Use threshold tuning or cost-sensitive learning to increase recall if needed.
-
-**Q: Can I use this in production?**  
-A: This is a proof-of-concept. For production deployment, collect more failure data, implement ensemble methods, add monitoring infrastructure, and set up continuous retraining pipelines.
-
-**Q: How do I improve model performance?**  
-A: Consider data augmentation, SMOTE, weighted loss functions, different architectures, or try complementary models (Isolation Forest, Local Outlier Factor).
-
-**Q: What does the autoencoder bottleneck do?**  
-A: It compresses normal patterns into 16 dimensions. Anomalies (failures) don't reconstruct well, resulting in high error signals.
