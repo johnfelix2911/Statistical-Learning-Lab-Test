@@ -374,18 +374,3 @@ A: Consider data augmentation, SMOTE, weighted loss functions, different archite
 
 **Q: What does the autoencoder bottleneck do?**  
 A: It compresses normal patterns into 16 dimensions. Anomalies (failures) don't reconstruct well, resulting in high error signals.
-
----
-
-## 🤝 Contributing
-
-Contributions welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request with detailed description
-
----
-
-## 📧 Contact & Support
-
-For questions or issues, please open a GitHub issue in the repository.
